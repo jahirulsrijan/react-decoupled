@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import ImageDataService from "../../services/image.service";
 import { Link } from "react-router-dom";
 
-export default class TutorialsList extends Component {
+export default class DemoList extends Component {
     constructor(props) {
         super(props);
         this.getImageTeaserList = this.getImageTeaserList.bind(this);
@@ -54,8 +54,7 @@ export default class TutorialsList extends Component {
                                 return (
                                     <article className="article" key={image.id}>
                                         <div>
-                                            {url}
-                                            <img src={"{https://my-first-drupal9-app.lndo.site}" + url} alt="some-image"/>
+                                            <img src={"https://my-first-drupal9-app.lndo.site" + url} alt="some-image"/>
                                         </div>
                                         <h2>{image.attributes.title}</h2>
                                         <p className="summary">{image.attributes.body.summary}</p>

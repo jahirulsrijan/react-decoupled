@@ -10,9 +10,9 @@ const Content = () => {
         <div className="content-wrapper">
             <Switch>
                 <Route exact path={["/"]} component={imageList}/>
-                <Route exact path="/vehicle/add" component={ImageAdd}/>
-                <Route path="/vehicle/:id/add" component={ImageAdd}/>
-                <Route path="/vehicle/:id" component={Image}/>
+                <Route exact path="/image/add" component={ImageAdd}/>
+                <Route path="/image/:id/add" component={ImageAdd}/>
+                <Route path="/image/:id" component={Image}/>
             </Switch>
         </div>
     )
