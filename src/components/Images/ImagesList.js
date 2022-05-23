@@ -38,7 +38,7 @@ export default class TutorialsList extends Component {
         if (images) {
             return (
                 <div className="vehicle-list">
-                    <h1>List of available vehicles</h1>
+                    <h1>List of available Images</h1>
                     <div className="articles">
                         {images &&
                         images.map(function (image) {
